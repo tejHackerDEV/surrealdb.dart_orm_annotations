@@ -13,7 +13,7 @@ export 'src/surrealdb_model.dart';
 /// This variable will be set only after calling [connect] function.
 /// So without invoking [connect] accessing this variable via any
 /// part file will throw runtimeException.
-late final Surreal surrealDB;
+late final Surreal surrealdb;
 
 /// Connects to SurrealDB
 Future<void> connect({
@@ -22,9 +22,9 @@ Future<void> connect({
   required String database,
   required SignInStrategy signInStrategy,
 }) async {
-  surrealDB = Surreal(url: url);
-  surrealDB.connect();
-  await surrealDB.wait();
-  await surrealDB.use(ns: namespace, db: database);
-  await surrealDB.signIn(signInStrategy);
+  surrealdb = Surreal(url: url);
+  surrealdb.connect();
+  await surrealdb.wait();
+  await surrealdb.use(ns: namespace, db: database);
+  await surrealdb.signIn(signInStrategy);
 }
