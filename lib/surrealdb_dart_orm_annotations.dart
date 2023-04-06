@@ -2,6 +2,8 @@ library surrealdb_dart_annotations;
 
 import 'package:surrealdb_dart/surrealdb_dart.dart';
 
+export 'package:surrealdb_dart/surrealdb_dart.dart';
+
 export 'src/surrealdb_model.dart';
 
 /// An instance of SurrealDB connection, which shouldn't be used
