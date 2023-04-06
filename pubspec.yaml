@@ -6,8 +6,11 @@ version: 1.0.0
 environment:
   sdk: '>=2.19.4 <3.0.0'
 
-# dependencies:
-#   path: ^1.8.0
+dependencies:
+  surrealdb_dart:
+    git:
+      url: https://github.com/tejHackerDEV/surrealdb.dart
+      ref: develop
 
 dev_dependencies:
   lints: ^2.0.0
