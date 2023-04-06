@@ -2,7 +2,7 @@ library surrealdb_dart_annotations;
 
 import 'package:surrealdb_dart/surrealdb_dart.dart';
 
-export 'src/surrealdb_dart_orm_annotations_base.dart';
+export 'src/surrealdb_model.dart';
 
 /// An instance of SurrealDB connection, which shouldn't be used
 /// or modified by anyone other than the part files generated
